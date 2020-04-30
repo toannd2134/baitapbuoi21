@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="firstViewController" customModule="baitapbuoi20" customModuleProvider="target">
+            <connections>
+                <outlet property="ketQuaLable" destination="MkO-sq-AMX" id="o0g-DT-vE0"/>
+                <outlet property="texfield" destination="VoJ-9D-uon" id="IVI-k7-YFz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewHistory" destination="P4U-yZ-Yif" id="R6J-cc-pbd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="( nhập số trong khoảng 0 đến 100 )" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poN-ez-JgL">
+                    <rect key="frame" x="66" y="143" width="269" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VoJ-9D-uon">
+                    <rect key="frame" x="66" y="99" width="269" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2I-92-elM">
+                    <rect key="frame" x="66" y="217" width="116.5" height="56"/>
+                    <color key="backgroundColor" red="0.86755181347150256" green="0.84799464463215235" blue="0.34983772709953592" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Đi quay số">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="pushAction:" destination="-1" eventType="touchUpInside" id="ad7-os-iYA"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkO-sq-AMX">
+                    <rect key="frame" x="66" y="303" width="251" height="72"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="P4U-yZ-Yif">
+                    <rect key="frame" x="48" y="395" width="318" height="383"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.77828631869758857" blue="0.43187587115336756" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="P4U-yZ-Yif" firstAttribute="height" secondItem="MkO-sq-AMX" secondAttribute="height" multiplier="5.31944" id="1Vq-ye-Q4E"/>
+                <constraint firstItem="VoJ-9D-uon" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="55" id="4sF-WW-L1e"/>
+                <constraint firstItem="poN-ez-JgL" firstAttribute="leading" secondItem="VoJ-9D-uon" secondAttribute="leading" id="5Hr-qG-XOE"/>
+                <constraint firstItem="MkO-sq-AMX" firstAttribute="leading" secondItem="s2I-92-elM" secondAttribute="leading" id="6Pq-ge-QHi"/>
+                <constraint firstItem="s2I-92-elM" firstAttribute="leading" secondItem="poN-ez-JgL" secondAttribute="leading" id="F7j-LT-W1J"/>
+                <constraint firstItem="P4U-yZ-Yif" firstAttribute="top" secondItem="MkO-sq-AMX" secondAttribute="bottom" constant="20" id="NDd-YT-M7b"/>
+                <constraint firstItem="MkO-sq-AMX" firstAttribute="width" secondItem="s2I-92-elM" secondAttribute="width" multiplier="1.25175" constant="105.17112500000002" id="fhZ-dY-gbn"/>
+                <constraint firstItem="P4U-yZ-Yif" firstAttribute="width" secondItem="MkO-sq-AMX" secondAttribute="width" multiplier="1.26693" id="fzG-P2-q52"/>
+                <constraint firstItem="s2I-92-elM" firstAttribute="top" secondItem="poN-ez-JgL" secondAttribute="top" constant="74" id="hZ3-qw-Nqt"/>
+                <constraint firstItem="poN-ez-JgL" firstAttribute="width" secondItem="VoJ-9D-uon" secondAttribute="width" id="iMG-Zf-gC5"/>
+                <constraint firstItem="VoJ-9D-uon" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="-6.5" id="ifl-mF-jUP"/>
+                <constraint firstItem="P4U-yZ-Yif" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="mIL-Dy-7Nh"/>
+                <constraint firstItem="poN-ez-JgL" firstAttribute="top" secondItem="VoJ-9D-uon" secondAttribute="bottom" constant="10" id="n3z-6d-6P4"/>
+                <constraint firstItem="poN-ez-JgL" firstAttribute="height" secondItem="VoJ-9D-uon" secondAttribute="height" id="nYU-mM-DSF"/>
+                <constraint firstItem="s2I-92-elM" firstAttribute="width" secondItem="poN-ez-JgL" secondAttribute="width" multiplier="0.433333" id="nvM-Ia-glX"/>
+                <constraint firstItem="s2I-92-elM" firstAttribute="height" secondItem="poN-ez-JgL" secondAttribute="height" multiplier="1.64706" id="vVA-dl-JrH"/>
+                <constraint firstItem="MkO-sq-AMX" firstAttribute="top" secondItem="s2I-92-elM" secondAttribute="bottom" constant="30" id="w0o-9K-5Pa"/>
+                <constraint firstItem="MkO-sq-AMX" firstAttribute="height" secondItem="s2I-92-elM" secondAttribute="height" multiplier="1.28571" id="yTp-ZY-whH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="136.23188405797103" y="149.33035714285714"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="secondViewController" customModule="baitapbuoi20" customModuleProvider="target">
+            <connections>
+                <outlet property="QuaysoView" destination="irZ-09-MtF" id="bSf-Y8-e20"/>
+                <outlet property="SecondLabel" destination="S95-gB-dYh" id="GqP-fg-1Pn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S95-gB-dYh">
+                    <rect key="frame" x="55" y="74" width="301" height="82"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.9493441815" green="1" blue="0.95849932859999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irZ-09-MtF">
+                    <rect key="frame" x="144.5" y="206" width="122" height="66"/>
+                    <color key="backgroundColor" red="1" green="0.84253067863007036" blue="0.34407967013460439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Quay số">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="QuayAction:" destination="-1" eventType="touchUpInside" id="vgs-ho-ylE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.82379170780510258" blue="0.56750864278834956" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="irZ-09-MtF" firstAttribute="width" secondItem="S95-gB-dYh" secondAttribute="width" multiplier="0.405316" id="Q3P-CH-W1z"/>
+                <constraint firstItem="S95-gB-dYh" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="-1.5" id="Stb-ea-YzD"/>
+                <constraint firstItem="irZ-09-MtF" firstAttribute="centerX" secondItem="S95-gB-dYh" secondAttribute="centerX" id="bho-DQ-xGc"/>
+                <constraint firstItem="S95-gB-dYh" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0915179" id="hpN-Ur-Xjo"/>
+                <constraint firstItem="irZ-09-MtF" firstAttribute="top" secondItem="S95-gB-dYh" secondAttribute="bottom" constant="50" id="ktf-5M-6K8"/>
+                <constraint firstItem="irZ-09-MtF" firstAttribute="height" secondItem="S95-gB-dYh" secondAttribute="height" multiplier="0.804878" id="mEy-In-dVk"/>
+                <constraint firstItem="S95-gB-dYh" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.429952" constant="123" id="uZU-cc-C4i"/>
+                <constraint firstItem="S95-gB-dYh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="unW-vq-iPs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="360.86956521739131" y="138.61607142857142"/>
+        </view>
+    </objects>
+</document>
